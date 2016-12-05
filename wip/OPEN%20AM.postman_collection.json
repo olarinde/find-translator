@@ -1,0 +1,40 @@
+{
+	"variables": [],
+	"info": {
+		"name": "OPEN AM",
+		"_postman_id": "71efea38-5d54-787c-903c-d0beb7f025b5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTHENTICATE_USER",
+			"request": {
+				"url": "http://localhost:8080/openam/json/dtc-ent/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-OpenAM-Username",
+						"value": "aikonakamura",
+						"description": ""
+					},
+					{
+						"key": "X-OpenAM-Password",
+						"value": "secret123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

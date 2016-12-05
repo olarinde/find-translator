@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DevGuide Payments",
+		"_postman_id": "631298e3-decb-6749-94a9-33084656cafe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "history",
+			"request": {
+				"url": "http://localhost:8080/payment",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "payment by id",
+			"request": {
+				"url": "http://localhost:8080/payment/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "cancel",
+			"request": {
+				"url": "http://localhost:8080/payment/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"url": "http://localhost:8080/payment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"id\": 0,\n    \"amount\": 35353535.5,\n    \"date\": \"17-12-2000\",\n    \"currency\": \"CHF\"\n  }\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "amend payment",
+			"request": {
+				"url": "http://localhost:8080/payment",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"id\": 2,\n    \"amount\": 375000.73,\n    \"date\": 1472498249666,\n    \"currency\": \"USD\"\n  }\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
